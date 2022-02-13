@@ -8,8 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <!-- personal addition to HW below -->
+  <link rel="icon" href="icon_HM.ico">
+  <!-- end personal addition -->
   <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
   <!-- BEGIN PART 1 -->
+  <link rel="stylesheet" href="styles.css">
+  <title>Hannah McGowan</title>
   <!-- END PART 1 -->
 </head>
 
@@ -17,7 +22,7 @@
   <header class="header center">
     <!-- BEGIN PART 2 -->
     <h3>
-
+      <a href="/">HM</a>
     </h3>
     <!-- END PART 2 -->
     <nav class="nav center">
@@ -41,7 +46,7 @@
 
       <!-- 
         5.1: What does this button tag correspond to on the site? 
-      
+        This button corresponds to the "moon" icon on the site and is used to change the theme of the page.
       
       -->
 
@@ -55,6 +60,10 @@
         make it so that this button appears on screen? 
         Hint: remember what @media (max-width: 600px) means.
 
+        One of the rule is display:none because it corresponds to the "desktop" version of the page. 
+        In other words, the hamburger is set to only display on the "mobile" version of the page 
+        (hence the smaller width in the media tag). If you wanted it to appear you would change the 
+        display so that it no longer shows as "none".
 
        -->
 
@@ -65,6 +74,14 @@
   <main>
     <div class="about center">
       <!-- BEGIN PART 6 -->
+      <h1>
+        Hi, I'm <span class="about__name">Hannah</span> 
+        <!-- personal addition to HW below -->
+        <img src="pixil_me.png" class="pixil__img"> 
+        <!-- end personal addition -->
+      </h1>
+      <h2 class="about__role">My role: student</h2>
+      <p class="about__desc">I'm a senior CogSci and Econ double major. I play the piano sometimes.</p>
       <!-- END PART 6 -->
       <div class="about__contact center">
         <a href="https://example.com">
@@ -104,6 +121,46 @@
             <i aria-hidden="true" class="fas fa-external-link-alt"></i>
           </a>
         </div>
+        <div class="project">
+          <h3>Project 1</h3>
+          <p class="project__description">
+            Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
+            sapiente debitis labore sed ipsam Mollitia repellat illum quod
+            unde beatae Quis
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Python</li>
+            <li class="project__stack-item">Java</li>
+            <li class="project__stack-item">JavaScript</li>
+          </ul>
+
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <a href="https://example.com" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+        <div class="project">
+          <h3>Project 1</h3>
+          <p class="project__description">
+            Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
+            sapiente debitis labore sed ipsam Mollitia repellat illum quod
+            unde beatae Quis
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Python</li>
+            <li class="project__stack-item">Java</li>
+            <li class="project__stack-item">JavaScript</li>
+          </ul>
+
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <a href="https://example.com" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
         <!-- END PART 8 -->
       </div>
     </section>
@@ -113,9 +170,9 @@
       <!-- BEGIN PART 10 -->
       <h2 class="section__title">Skills</h2>
       <ul class="skills__list">
-        <li class="skills__list-item btn btn--plain"></li>
-        <li class="skills__list-item btn btn--plain"></li>
-        <li class="skills__list-item btn btn--plain"></li>
+        <li class="skills__list-item btn btn--plain">frontend/backend</li>
+        <li class="skills__list-item btn btn--plain">music comp</li>
+        <li class="skills__list-item btn btn--plain">spanish/korean</li>
       </ul>
       <!-- END PART 10 -->
     </section>
@@ -130,7 +187,7 @@
   <footer class="footer">
     <!-- BEGIN PART 12 -->
     <a href="/" class="link footer__link">
-      Created By Your Name
+      Created By Hannah McGowan
     </a>
     <!-- END PART 12 -->
   </footer>
